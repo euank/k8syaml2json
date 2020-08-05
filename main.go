@@ -46,5 +46,6 @@ func main() {
 		if _, err := os.Stdout.Write(jsonBytes); err != nil {
 			log.Fatalf("Error writing to stdout: %v", err)
 		}
+		os.Stdout.WriteString("\n")
 	}
 }
